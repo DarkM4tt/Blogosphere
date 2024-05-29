@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import styles from "../styles/header.module.css";
@@ -20,7 +22,7 @@ const Header = () => {
         className="md:hidden"
       />
       {isMobileMenuOpen && (
-        <div className="fixed top-0 right-0 bg-white shadow-lg p-4">
+        <div className="fixed top-0 right-0 bg-white p-4">
           <nav className={styles.nav}>
             <a href="#" className={styles.active}>
               Blog
