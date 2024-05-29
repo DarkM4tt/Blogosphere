@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Understanding React Hooks",
+    "date": "2023-04-12",
+    "author": "Jane Doe",
+    "description": "A comprehensive guide to understanding and using React Hooks in your applications.",
+    "thumbnail": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 2,
+    "title": "Next.js vs. Gatsby",
+    "date": "2023-05-08",
+    "author": "John Smith",
+    "description": "An in-depth comparison between Next.js and Gatsby for building static and dynamic websites.",
+    "thumbnail": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 3,
+    "title": "Advanced JavaScript Techniques",
+    "date": "2023-06-15",
+    "author": "Alice Johnson",
+    "description": "Explore advanced JavaScript techniques and patterns for improving your code.",
+    "thumbnail": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 4,
+    "title": "CSS Grid Layout: A Complete Guide",
+    "date": "2023-07-10",
+    "author": "Bob Brown",
+    "description": "Learn how to use CSS Grid Layout to create complex web layouts with ease.",
+    "thumbnail": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 5,
+    "title": "TypeScript for Beginners",
+    "date": "2023-08-20",
+    "author": "Cathy White",
+    "description": "Get started with TypeScript and improve the robustness of your JavaScript applications.",
+    "thumbnail": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 6,
+    "title": "Building RESTful APIs with Node.js",
+    "date": "2023-09-05",
+    "author": "Dave Wilson",
+    "description": "A step-by-step guide to building RESTful APIs using Node.js and Express.",
+    "thumbnail": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 7,
+    "title": "Introduction to GraphQL",
+    "date": "2023-10-01",
+    "author": "Eve Adams",
+    "description": "Learn the basics of GraphQL and how to implement it in your web applications.",
+    "thumbnail": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 8,
+    "title": "Vue.js vs. React: Which is Better?",
+    "date": "2023-10-25",
+    "author": "Frank Clark",
+    "description": "A comparative analysis of Vue.js and React to help you choose the right framework.",
+    "thumbnail": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 9,
+    "title": "Responsive Web Design Principles",
+    "date": "2023-11-10",
+    "author": "Grace Lee",
+    "description": "Understand the principles of responsive web design and how to apply them to your projects.",
+    "thumbnail": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 10,
+    "title": "State Management in React with Redux",
+    "date": "2023-12-01",
+    "author": "Henry Turner",
+    "description": "A detailed guide to managing state in React applications using Redux.",
+    "thumbnail": "https://via.placeholder.com/150"
+  }
+]
