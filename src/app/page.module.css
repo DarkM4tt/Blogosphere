@@ -17,3 +17,9 @@
   z-index: 2;
   font-family: var(--font-mono);
 } */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
