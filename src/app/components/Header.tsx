@@ -3,9 +3,11 @@
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import styles from "../styles/header.module.css";
+import { useTheme } from "../context/ThemeContext";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { isDark, toggleTheme } = useTheme();
 
   return (
     <header className="flex justify-end items-center p-5 md:px-10">
@@ -15,6 +17,9 @@ const Header = () => {
         </a>
         <a href="#">Works</a>
         <a href="#">Contact</a>
+        <button onClick={toggleTheme} className={styles.themeToggle}>
+          {isDark ? "🌞" : "🌙"}
+        </button>
       </nav>
       <FaBars
         size={24}
