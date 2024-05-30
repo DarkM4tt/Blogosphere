@@ -6,9 +6,9 @@
 }
 
 .nav {
-  display: flex;
+  /* display: flex;
   gap: 40px;
-  font-weight: bold;
+  font-weight: bold; */
 }
 
 .active {

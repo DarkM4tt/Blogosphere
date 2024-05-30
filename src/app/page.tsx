@@ -54,7 +54,7 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <div className="flex justify-between items-center flex-wrap mt-5 mb-7">
+      <div className="flex justify-between items-center flex-wrap mt-2 mb-7">
         <h1 className="text-3xl font-bold">Blog</h1>
         <SearchBar onSearch={handleSearch} />
       </div>

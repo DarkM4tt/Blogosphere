@@ -8,9 +8,9 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className={styles.header}>
-      <nav className={styles.nav}>
-        <a href="#" className={styles.active}>
+    <header className="flex justify-end items-center p-5 md:px-10">
+      <nav className="hidden md:flex gap-[40px] font-bold">
+        <a href="#" className="text-[#FF6464]">
           Blog
         </a>
         <a href="#">Works</a>
@@ -22,9 +22,9 @@ const Header = () => {
         className="md:hidden"
       />
       {isMobileMenuOpen && (
-        <div className="fixed top-0 right-0 bg-white p-4">
-          <nav className={styles.nav}>
-            <a href="#" className={styles.active}>
+        <div className="md:hidden fixed top-0 right-0 bg-white p-4">
+          <nav className="flex gap-[40px] font-bold">
+            <a href="#" className="text-[#FF6464]">
               Blog
             </a>
             <a href="#">Works</a>
