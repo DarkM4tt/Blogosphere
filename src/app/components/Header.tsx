@@ -9,6 +9,9 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { isDark, toggleTheme } = useTheme();
 
+  console.log(isDark);
+  
+
   return (
     <header className="flex justify-end items-center p-5 md:px-10">
       <nav className="hidden md:flex gap-[40px] font-bold">
@@ -28,12 +31,19 @@ const Header = () => {
       />
       {isMobileMenuOpen && (
         <div className="md:hidden fixed top-0 right-0 bg-white p-4">
-          <nav className="flex gap-[40px] font-bold">
+          <nav
+            className={`flex gap-[40px] font-bold ${
+              isDark ? "text-black" : ""
+            }`}
+          >
             <a href="#" className="text-[#FF6464]">
               Blog
             </a>
             <a href="#">Works</a>
             <a href="#">Contact</a>
+            <button onClick={toggleTheme} className={styles.themeToggle}>
+              {isDark ? "🌞" : "🌙"}
+            </button>
           </nav>
         </div>
       )}

@@ -5,6 +5,10 @@
   padding: 20px 40px;
 }
 
+.darkColor {
+  color: black;
+}
+
 .active {
   color: #FF6464;
 }
