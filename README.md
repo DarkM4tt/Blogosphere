@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Blogosphere
 
-## Getting Started
+![alt text](image.png)
 
-First, run the development server:
+A responsive blog page created using Next.js and TypeScript. The design is based on a provided Figma design and includes features like a search bar, responsive layout, and social media links.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Figma Design Reference
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[Portfolio UI - Web & Mobile (Community)](https://www.figma.com/design/QmBB1AoGkxEQP90oJZnCBm/Portfolio-UI---Web-%26-Mobile-(Community)?node-id=0-1&t=ez5H0udg1UEDxeNe-0)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Prerequisites
 
-## Learn More
+- Node.js (v14 or higher)
+- npm or yarn
 
-To learn more about Next.js, take a look at the following resources:
+### Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository:
+    ```sh
+    git clone <repository_url>
+    cd blogosphere
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. Install dependencies:
+    ```sh
+    npm install
+    # or
+    yarn install
+    ```
 
-## Deploy on Vercel
+3. Start the development server:
+    ```sh
+    npm run dev
+    # or
+    yarn dev
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Build and Deploy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Build the project:
+    ```sh
+    npm run build
+    # or
+    yarn build
+    ```
+
+2. Start the production server:
+    ```sh
+    npm start
+    # or
+    yarn start
+    ```
+
+### Running the project locally
+
+To run the project locally, follow these steps:
+
+1. Ensure all dependencies are installed:
+    ```sh
+    npm install
+    # or
+    yarn install
+    ```
+
+2. Start the development server:
+    ```sh
+    npm run dev
+    # or
+    yarn dev
+    ```
+
+3. Open your browser and navigate to `http://localhost:3000`
+
+
+## Design Choices
+
+### Layout
+
+- **Responsive Design:** The layout adjusts to different screen sizes using Tailwind CSS.
+- **Navigation:** A header with navigation links that adjust visibility based on screen size.
+- **Footer:** Includes social media icons and adheres to the overall design theme.
+
+### Styling
+
+- **Tailwind CSS:** For utility-first CSS to style components.
+- **CSS Modules:** For scoped and modular CSS, ensuring styles do not conflict.
+
+### Functionality
+
+- **Search Bar:** Allows users to filter blog posts by title, description, or author.
+- **Static Generation:** Blog posts are fetched from a local JSON file using Next.js' static generation.
+
+## Libraries Used
+
+- **Next.js:** For server-side rendering and static site generation.
+- **React:** For building UI components.
+- **Tailwind CSS:** For styling the components.
+- **React Icons:** For social media icons and other icons.
+- **TypeScript:** For type safety and better developer experience.
+
+## Additional Features
+
+- **Dark Mode Toggle:** A toggle to switch between light and dark mode.
+
+## Contact
+
+If you have any questions or suggestions, feel free to contact me at prabhat.dev933@gmail.com.
