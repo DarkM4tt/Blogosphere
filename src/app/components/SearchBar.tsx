@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import styles from "../styles/searchBar.module.css";
+import { useTheme } from "../context/ThemeContext";
 
 interface SearchBarProps {
   onSearch: (query: string) => void;
@@ -10,6 +11,7 @@ interface SearchBarProps {
 
 export default function SearchBar({ onSearch }: SearchBarProps) {
   const [query, setQuery] = useState("");
+  const { isDark, toggleTheme } = useTheme();
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(event.target.value);
@@ -27,7 +29,7 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
         value={query}
         onChange={handleInputChange}
         placeholder="Search by title, desc or author"
-        className="p-2 border w-full border-gray-300 rounded-l-lg focus:outline-none"
+        className={`p-2 border w-full border-gray-300 rounded-l-lg focus:outline-none ${isDark ? "text-black" : ""}`}
       />
       <button
         type="submit"
